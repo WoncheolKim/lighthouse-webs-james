@@ -1,11 +1,11 @@
-let myVar = "global";
+const num = String(process.argv.slice(2));
+const roll = function () {
+  return Math.floor(Math.random() * 6) + 1;
+};
 
-const myFunction = function() {
-  let myVar = "local";
-
-  console.log("inside myFunction, myVar is:", myVar); 
+let dice = [];
+for (let i = 0; i < num; i++) {
+  dice.push(roll());
 }
 
-myFunction();
-
-console.log("outside myFunction, myVar is:", myVar);  
+console.log("Rolled " + Number(num) + " dice : " + dice.join(" "));
