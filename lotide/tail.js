@@ -4,4 +4,4 @@ const tail = function(array) {
   return newArr;
 }
 
-module.exports = tail;
+module.experts = tail;
