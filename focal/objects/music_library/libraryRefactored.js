@@ -1,3 +1,5 @@
+// I spent a lot of time to find some of errors here.
+// It was all about comma(,). I need to focus more and more.
 
 const library = {
   tracks: { t01: { id: "t01",
@@ -128,16 +130,12 @@ printSearchResults: function(query) {
 }
 
 library.printPlaylists();
-console.log("--------------------- \n")
 library.printTracks();
-console.log("--------------------- \n")
 library.printPlaylist('p01');
-console.log("--------------------- \n")
 library.addTrackToPlaylist('t03', 'p02');
 console.log(library.playlists);
-console.log("--------------------- \n")
 console.log("Add Track:   " ); library.addTrack('low rider', 'War', 'WCANT');
 console.log(library.tracks);
-console.log("--------------------- \n")
 console.log("Add Playlist  :   " ); library.addPlaylist('my music');
 console.log(library.playlists);
+
