@@ -134,8 +134,8 @@ library.printTracks();
 library.printPlaylist('p01');
 library.addTrackToPlaylist('t03', 'p02');
 console.log(library.playlists);
-console.log("Add Track:   " ); library.addTrack('low rider', 'War', 'WCANT');
+console.log("Add Track:   " ); library.addTrack("Shawn Peter Raul Mendes", "Shawn Mendes" ,"Wonder");
 console.log(library.tracks);
-console.log("Add Playlist  :   " ); library.addPlaylist('my music');
+console.log("Add Playlist  :   " ); library.addPlaylist('Sun rise');
 console.log(library.playlists);
 
