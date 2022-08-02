@@ -9,4 +9,4 @@ const middle = function(array) {
   }
 };
 
-module.experts = middle;
+module.exports = middle;
