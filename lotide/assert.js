@@ -14,3 +14,5 @@ const sumBuggy = function(a, b) {
 
 // TEST CODE
 console.assert(sumBuggy(1, 2) === 3); // fails, because bug!
+
+module.exports = assert;

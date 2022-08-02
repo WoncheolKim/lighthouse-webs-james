@@ -34,3 +34,4 @@ countLetters("lighthouse")
 
 // return object
 
+module.exports = countLetters;
