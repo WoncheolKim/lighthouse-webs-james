@@ -1,5 +1,16 @@
 const transpose = function (matrix) {
-  // Put your solution here
+  // for loop
+  let newArray = [];
+  for (let y = 0; y < matrix[0].length; y++) {
+    for (let x = 0; x < matrix.length; x++) {
+      if (!newArray[y]) {
+        newArray[y] = [matrix[x][y]];
+      } else if (newArray[y]) {
+        newArray[y].push(matrix[x][y]);
+      }
+    }
+  }
+  return newArray;
 };
 
 // Do not edit this function.
@@ -12,6 +23,9 @@ const printMatrix = (matrix) => {
   }
 };
 
+console.log("----");
+
+// Test code
 printMatrix(
   transpose([
     [1, 2, 3, 4],
@@ -34,3 +48,4 @@ printMatrix(
 console.log("----");
 
 printMatrix(transpose([[1, 2, 3, 4, 5, 6, 7]]));
+
