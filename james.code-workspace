@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"path": "api/json_the_cat"
+	}
+],
+  "settings": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "eslint.format.enable": true
+  }
+}
